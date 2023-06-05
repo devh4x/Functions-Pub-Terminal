@@ -7,6 +7,8 @@
 redclr='\e[0;31m\033[1m'
 greenclr='\e[0;32m\033[1m'
 yellowclr='\e[0;33m\033[1m'
+purpelclr='\e[0;35m\033[1m'
+turquoiseclr='\e[0;36m\033[1m'
 endclr='\033[0m\e[0m'
 
 #Functions 
@@ -24,4 +26,9 @@ function extractPorts(){
 
 function mkt(){
   mkdir {enum,content,exploits}
+}
+
+function delhistory(){
+  echo '' > /root/.zsh_history
+  echo '' > /home/user/.zsh_history #Change user
 }
